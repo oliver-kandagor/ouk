@@ -1,0 +1,38 @@
+[
+  {
+    "user_id": "@somas_bot:localhost",
+    "token": "syt_c29tYXNfYm90_uxYCOBjmqGEKXPmXHdME_2uJNjh",
+    "device_id": "OTVPRYCZHP",
+    "display_name": "SOMAS Bot"
+  },
+  {
+    "user_id": "@group_bot:localhost",
+    "token": "syt_Z3JvdXBfYm90_ujnHjJtXoVylKGPpzbmr_1CkWGR",
+    "device_id": "KCGNQCKLZL",
+    "display_name": "Group Bot"
+  },
+  {
+    "user_id": "@info_bot:localhost",
+    "token": "syt_aW5mb19ib3Q_TFkHeoodtzBMjZjVUZqs_3csDxs",
+    "device_id": "LIMYKHHDYC",
+    "display_name": "Info Bot"
+  },
+  {
+    "user_id": "@bible_bot:localhost",
+    "token": "syt_YmlibGVfYm90_IPKwkrYYhDGLzFbDsHOZ_3ih0Lp",
+    "device_id": "TBMRXSYAIY",
+    "display_name": "Bible Bot"
+  },
+  {
+    "user_id": "@class_bot:localhost",
+    "token": "syt_Y2xhc3NfYm90_FIdxosrcgYoWuzlhCFir_1JXkOP",
+    "device_id": "JSZXDDGTGL",
+    "display_name": "Class Bot"
+  },
+  {
+    "user_id": "@support_bot:localhost",
+    "token": "syt_c3VwcG9ydF9ib3Q_pjwUyJZzBZakuJbLUIfA_0kGFmI",
+    "device_id": "ZKMQTZGLKR",
+    "display_name": "Student Support Bot"
+  }
+]

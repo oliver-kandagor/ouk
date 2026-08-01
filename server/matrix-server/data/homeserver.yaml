@@ -1,0 +1,77 @@
+# Configuration file for Synapse.
+#
+# This is a YAML file: see [1] for a quick introduction. Note in particular
+# that *indentation is important*: all the elements of a list or dictionary
+# should have the same indentation.
+#
+# [1] https://docs.ansible.com/ansible/latest/reference_appendices/YAMLSyntax.html
+#
+# For more information on how to configure Synapse, including a complete accounting of
+# each option, go to docs/usage/configuration/config_documentation.md or
+# https://element-hq.github.io/synapse/latest/usage/configuration/config_documentation.html
+server_name: "localhost"
+pid_file: /data/homeserver.pid
+listeners:
+  - port: 8008
+    resources:
+    - compress: false
+      names:
+      - client
+      - federation
+    tls: false
+    type: http
+    x_forwarded: true
+database:
+  name: sqlite3
+  args:
+    database: /data/homeserver.db
+log_config: "/data/localhost.log.config"
+media_store_path: /data/media_store
+registration_shared_secret: "zUu&~T_.kV^83gU4#faW:U7*#p8Mt,yVJGDRJ4A;0Mm74-:#Ew"
+report_stats: false
+macaroon_secret_key: "EmV~1F&=dFG.pX6p;#3kT++3UoVM9_.8=+UrOrqo*Z0It7gLfZ"
+form_secret: ".7t_pFR~shao&:1C,*caO3.lAV3cImc7mL,;GKkpkgBSQnGdbE"
+signing_key_path: "/data/localhost.signing.key"
+trusted_key_servers:
+  - server_name: "matrix.org"
+
+
+# vim:ft=yaml
+
+server_notices:
+  system_mxid_localpart: server
+  system_mxid_display_name: "Open University"
+  system_mxid_avatar_url: ""
+  room_name: "Open University Notices"
+
+
+presence:
+  enabled: true
+
+url_preview_enabled: true
+
+url_preview_ip_range_blacklist:
+  - '127.0.0.0/8'
+  - '10.0.0.0/8'
+  - '172.16.0.0/12'
+  - '192.168.0.0/16'
+  - '100.64.0.0/10'
+  - '169.254.0.0/16'
+  - '::1/128'
+  - 'fe80::/10'
+  - 'fc00::/7'
+
+url_preview_url_blacklist:
+  - 'localhost'
+  - '127.0.0.1'
+
+federation_enabled: true
+
+enable_registration: true
+enable_registration_without_verification: true
+
+modules:
+  - module: moodle_auth.MoodleAuthProvider
+    config:
+      moodle_url: "https://somas.ouk.ac.ke"
+      moodle_service: "moodle_mobile_app"

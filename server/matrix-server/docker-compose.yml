@@ -1,0 +1,12 @@
+services:
+  synapse:
+    image: matrixdotorg/synapse:latest
+    container_name: synapse
+    ports:
+      - "8008:8008"
+    volumes:
+      - ./data:/data
+    environment:
+      SYNAPSE_CONFIG_PATH: /data/homeserver.yaml
+      PYTHONPATH: /data
+    restart: unless-stopped

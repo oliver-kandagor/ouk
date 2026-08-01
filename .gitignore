@@ -1,0 +1,28 @@
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C/C++ compiled binaries & debug symbols
+*.dSYM/
+*.o
+*.obj
+server/matrix-server/ hello
+server/matrix-server/bot
+
+# Database & key files
+*.db
+*.sqlite
+*.sqlite3
+*.signing.key
+
+# Log files
+*.log

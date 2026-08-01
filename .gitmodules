@@ -1,0 +1,21 @@
+[submodule "app/ouk-app"]
+	path = app/ouk-app
+	url = https://github.com/st04352752025-maker/ouk-app.git
+[submodule "app/matrix-js-sdk"]
+	path = app/matrix-js-sdk
+	url = https://github.com/matrix-org/matrix-js-sdk.git
+[submodule "app/element-web"]
+	path = app/element-web
+	url = https://github.com/element-hq/element-web.git
+[submodule "app/element-x-ios"]
+	path = app/element-x-ios
+	url = https://github.com/element-hq/element-x-ios.git
+[submodule "element-x-android"]
+	path = element-x-android
+	url = https://github.com/element-hq/element-x-android.git
+[submodule "oukgram/mastodon-ios"]
+	path = oukgram/mastodon-ios
+	url = https://github.com/mastodon/mastodon-ios.git
+[submodule "somasapp/mymoodle"]
+	path = somasapp/mymoodle
+	url = https://github.com/moodlehq/mymoodle.git
